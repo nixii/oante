@@ -20,6 +20,10 @@ go_to_primary = [
      "anu",
      "la"
 ]
+singles = [
+     "mi",
+     "sina"
+]
 
 def split_punct(word):
      just_word = ""
@@ -39,7 +43,11 @@ def translate(words):
      # primary and modifier
      translate_primary = True
 
+     # the final result
      res = ""
+
+     # have you already done the mi/sina thing
+     done_special_subject = False
 
      # go through the words
      for word in words:
@@ -61,6 +69,14 @@ def translate(words):
 
           # reset translating primiary
           if w in go_to_primary or p != "":
+               translate_primary = True
+          elif w in singles and not done_special_subject:
+               translate_primary = True
+               done_special_subject = True
+
+          # reset sentences
+          if not p.isspace():
+               done_special_subject = False
                translate_primary = True
 
           # get the base translation
