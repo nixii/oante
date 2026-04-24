@@ -18,10 +18,10 @@ translate everything within the quotes (which you need).
 
 ### Examples
 ` $ oante "toki a, ma o!"`
-\> conversation ah, ground hey!
+<br>\> conversation ah, ground hey!
 > Translation: hello, world!
 
-`oante "sina wile ala wile kepeken ilo ni?"`
-\> you want not want use tool this?
+` $ oante "sina wile ala wile kepeken ilo ni?"`
+<br>\> you want not want use tool this?
 > Translation: do you want to use this tool?
 
