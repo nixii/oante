@@ -4,7 +4,7 @@ build-backend "hatchling.build"
 
 # TODO: add the info
 [project]
-name = ["toki_pona_translator_NIXII"]
+name = ["oante"]
 version = "1.0.0"
 authors = [
      { name="Nixii", email="" }
@@ -17,3 +17,6 @@ classifiers = [
      "Programming Language :: Python :: 3",
      "Operating System :: OS Independent",
 ]
+
+[project.urls]
+
