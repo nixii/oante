@@ -15,3 +15,13 @@ None yet; you have to run it with python yourself.
 ## Usage
 To use this tool, simply run `oante "toki pona here"`. This will literally
 translate everything within the quotes (which you need).
+
+### Examples
+` $ oante "toki a, ma o!"`
+\> conversation ah, ground hey!
+> Translation: hello, world!
+
+`oante "sina wile ala wile kepeken ilo ni?"`
+\> you want not want use tool this?
+> Translation: do you want to use this tool?
+

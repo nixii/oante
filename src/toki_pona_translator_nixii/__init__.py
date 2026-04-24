@@ -75,14 +75,14 @@ def translate(words):
                translate_primary = False
 
           # reset translating primiary
-          if w in go_to_primary or p != "":
+          if w in go_to_primary:
                translate_primary = True
           elif w in singles and not done_special_subject:
                translate_primary = True
                done_special_subject = True
 
           # reset sentences
-          if not p.isspace():
+          if p.isspace():
                done_special_subject = False
                translate_primary = True
 

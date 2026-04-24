@@ -72,7 +72,7 @@ definitions = {
      "ni": ("this", "this"),
      "nimi": ("word", "word"),
      "noka": ("foot", "foot"),
-     "o": ("command", "should"),
+     "o": ("command", "hey"),
      "olin": ("love", "love"),
      "ona": ("they", "their"),
      "open": ("open", "start"),
