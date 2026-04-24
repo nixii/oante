@@ -4,12 +4,19 @@ import sys
 
 help_message = """
 oante -- literal toki pona translator
-  To use this, simply type `oante` followed by
-  whatever text you wish to translate.
+     To use this, simply type `oante` followed by
+  whatever text you wish to translate, in
+  quotes.
   
   Example:
-   $ oante toki a, ma o!
-  hello emphasis, world hey!
+   $ oante "toki a, ma o!"
+   > hello emphasis, world hey!
+
+     This tool is a little smart, looking at the
+  surrounding words to determine if a specific
+  term should be a modifier or not.
+
+     Punctuation is preserved, spaces are not.
 """
 
 toki_pona_letters = list("aeiouptklmnswj")
