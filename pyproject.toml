@@ -1,11 +1,11 @@
 [build-system]
 requires = ["hatchling >= 1.26"]
-build-backend "hatchling.build"
+build-backend = "hatchling.build"
 
 # TODO: add the info
 [project]
-name = ["oante"]
-version = "1.0.0"
+name = "oante"
+version = "1.1.0"
 authors = [
      { name="Nixii", email="" }
 ]
@@ -18,5 +18,11 @@ classifiers = [
      "Operating System :: OS Independent",
 ]
 
-[project.urls]
+[tool.setuptools]
+package-dir = {"" = "src"}
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+oante = "oante:main"

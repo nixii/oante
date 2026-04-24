@@ -1,5 +1,5 @@
 
-from definitions import definitions
+from .definitions import definitions
 import sys
 
 help_message = """
@@ -110,5 +110,3 @@ def main():
      res = translate(words)
      print(res)
 
-if __name__ == '__main__':
-     main()
